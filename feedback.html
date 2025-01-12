@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Feedback</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background: #242c36;
+            padding: 50px 9%;
+        }
+
+        .feedback-container input[type="text"],
+        .feedback-container input[type="email"],
+        .feedback-container input[type="password"],
+        .feedback-container textarea {
+            padding: 7px;
+            width: 100%;
+            border-style: none;
+            border-radius: 2px;
+            margin-bottom: 10px;
+            background-color: #eee;
+        }
+
+        .feedback-container input[type="radio"] {
+            border-style: none;
+            margin-bottom: 10px;
+            background-color: #eee;
+        }
+
+        .feedback-container .gender {
+            border-style: none;
+            border-radius: 2px;
+            margin-bottom: 3px;
+        }
+
+        .feedback-container i {
+            margin-right: 20px;
+        }
+
+        .feedback-container textarea {
+            resize: none;
+        }
+
+        .feedback-container .feedback-button {
+            display: flex;
+            justify-content: center;
+        }
+
+        .feedback-container input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        .feedback-container input[type="submit"], 
+        .feedback-container input[type="reset"] {
+            width: 100%;
+            padding: 7px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border-style: none;
+            background-color: #00ffcc;
+            transition: .3s ease;
+            display: block;
+            color: #1f242d;
+            cursor: pointer;
+            transition: .3s ease;
+        }
+
+        .feedback-container input[type="submit"]:hover, 
+        .feedback-container input[type="reset"]:hover {
+            background-color: #009d80;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" id="feedback">
+        <div class="feedback-container">
+            <label for="user-firstname"><b>First Name</b></label><br>
+            <input type="text" name="user-firstname" placeholder="Juan" required>
+            <br>
+            <label for="user-lastname"><b>Last Name</b></label><br>
+            <input type="text" name="user-lastname" placeholder="Dela Cruz" required>
+            <br>
+            <label for="user-birthday"><b>Birthday</b></label><br>
+            <input type="date" name="user-birthday" required>
+            <br>
+            <label for="user-email"><b>Email</b></label><br>
+            <input type="email" name="user-email" placeholder="juandelacruz@email.com">
+            <br>
+            <div class="gender">
+                <label for="gender"><b>Gender</b></label><br>
+                <input type="radio" name="gender" value="male" required> <i>Male</i>
+                <input type="radio" name="gender" value="female" required> <i>Female</i>
+                <input type="radio" name="gender" value="n/a" required> <i>Prefer not to say</i>
+            </div>
+            <label for="file-upload"><b>Upload Image Feedback</b></label><br>
+            <input type="file" name="file-upload" accept=".jpg, .jpeg, .png">
+            <br>
+            <label for="user-feedback"><b>Feedback</b></label><br>
+            <textarea name="user-feedback" cols="50" rows="10" placeholder="add your feedback here..."></textarea>
+            <br><br>
+            <div class="submit-button">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

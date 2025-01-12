@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background: #242c36;
+        }    
+
+        .about-website {
+            display: flex;
+            align-items: center;
+
+            width: 100%;
+
+            margin-top: 80px;
+            padding: 60px 5%;
+        }
+
+        .about-website h1 {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        .about-website p {
+            margin: 10px 20px 25px;
+
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        .about-website table {
+            width: 100%;
+            border-collapse: collapse; 
+            margin-bottom: 30px;
+        }
+
+        .about-website th, 
+        .about-website td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .about-website thead th {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .about-website caption {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .about-website table .author-name {
+            color: #00ffcc;
+        }
+
+        .about-website table a {
+            font-style: italic;
+            color: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">tampokLokal</a>
+        <ul>
+            <li><a href="index.html"><i class='bx bx-home-alt-2' ></i>Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn"><i class='bx bx-rectangle'></i>Feed</a>
+                <div class="db-content">
+                    <a href="feed.html#foods">Foods</a>
+                    <a href="feed.html#beverages">Beverages</a>
+                    <a href="feed.html#travel">Travel</a>
+                </div>
+            </li>
+            <li class="active"><a href="#"><i class='bx bx-id-card'></i>About</a></li>
+            <button><a href="login.html"><b>Login</b></a></button>
+        </ul>
+    </nav>
+    
+    <section class="about-website">
+        <div class="website-info">
+            <h1>About Website</h1>
+            <i>
+                <p>"Thank you for visiting our website! We are a group of BS Computer Science students with a shared passion for Filipino cuisine, love for places, and technology. 
+                    As part of our project, we aim to explore the rich and diverse flavors of Filipino food, from savory classics like Adobo to delightful desserts like Halo-Halo, while showcasing the breathtaking beauty of famous Filipino destinations".</p>
+                
+                <p>"Although our primary focus is technology, we have thoroughly enjoyed immersing ourselves in the unique flavors and traditions that make Filipino food so special. 
+                    Our goal is to introduce you to some of the most beloved Filipino dishes and iconic locations, inspiring you to experience them for yourself".</p>
+                
+                <p>"This website was created using HTML and CSS. 
+                    Through this project, we have learned how to bring together design, content, and functionality with the use of HTML and CSS".</p>
+                
+                <p>"We decided to name our website <strong>tampokLokal</strong> because it highlights the richness of Filipino cuisine, and destinations. 
+                    'Tampok' means to highlight, and 'Lokal' emphasizes our local treasures, perfectly capturing our mission to showcase the unique aspects of the Philippines".</p>
+            
+                <p>"Thank you for checking out our project! 
+                We hope you enjoy discovering the wonders of Filipino cuisine and places with us".</p>
+            </i>
+            <table border="1" bordercolor="d3d3d3" bgcolor="242c36" width="100%" align="left">
+                <colgroup>
+                    <col style="width: 20%;">
+                    <col>
+                    <col style="width: 20%">
+                </colgroup>
+                <caption><h1>About Authors</h1></caption>
+                <thead bgcolor="121b24" height="70">
+                    <th colspan="3">Personal Details</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="2" class="author-name"><i class='bx bx-user'></i> Jasper P. Cuarte</th>
+                        <th>BSCS 1-2</th>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td colspan="2"><i>jasper.cuarte@cvsu.edu.ph</i></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Contact:</td>
+                        <td colspan="2"><i>+63 9858192012</i></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" bgcolor="1f242d"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th colspan="2" class="author-name"><i class='bx bx-user'></i> Nathaniel D. Roque</th>
+                        <th>BSCS 1-2</th>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td colspan="2"><i>nathaniel.roque@cvsu.edu.ph</i></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Contact:</td>
+                        <td colspan="2"><i>+63 9762672204</i></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" bgcolor="1f242d"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th colspan="2" class="author-name"><i class='bx bx-user'></i> Jonash M. Pasia</th>
+                        <th>BSCS 1-2</th>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td colspan="2"><i>jonash.pasia@cvsu.edu.ph</i></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Contact:</td>
+                        <td colspan="2"><i>+63 9503031050</i></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" bgcolor="1f242d"></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th colspan="2" class="author-name"><i class='bx bx-user'></i> Alexus Nathan R. Barrera</th>
+                        <th>BSCS 1-2</th>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td colspan="2"><i>alexusnathan.barrera@cvsu.edu.ph</i></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Contact:</td>
+                        <td colspan="2"><i>+63 9945007476</i></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" bgcolor="1f242d"></td>
+                    </tr>
+                </tbody>
+                <tfoot bgcolor="121b24" height="50">
+                    <tr>
+                        <td colspan="3"><marquee><strong>Date Created: 12/18/2024 - 12/22/2024</strong></marquee></td>
+                    </tr>
+                </tfoot>
+            </table>    
+            <table border="1" bordercolor="d3d3d3" bgcolor="242c36" width="100%" align="left">
+                <colgroup>
+                    <col style="width: 30%;">
+                    <col>
+                <caption><h1>References</h1></caption>
+                <thead bgcolor="121b24" height="70">
+                    <tr>
+                        <th>Uses</th>
+                        <th>Links</th>
+                    </tr>    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Icons</td>
+                        <td><a href="https://boxicons.com"><i class='bx bx-link'></i>https://boxicons.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Background Image</td>
+                        <td><a href="https://wallhaven.cc/w/2e1wlg"><i class='bx bx-link'></i>https://wallhaven.cc/w/2e1wlg</a></td>
+                    </tr>
+                    <tr>
+                        <td>Filipino Foods Description</td>
+                        <td><a href="https://www.seriouseats.com/how-to-get-started-cooking-filipino-food-5270830"><i class='bx bx-link'></i>https://www.seriouseats.com/how-to-get-started-cooking-filipino-food-5270830</a></td>
+                    </tr>
+                    <tr>
+                        <td>Filipino Drinks Description</td>
+                        <td><a href="https://www.willflyforfood.net/filipino-drinks"><i class='bx bx-link'></i>https://www.willflyforfood.net/filipino-drinks</a></td>
+                    </tr>
+                    <tr>
+                        <td>Filipino Places Description</td>
+                        <td><a href="https://guidetothephilippines.ph/destinations-and-attractions"><i class='bx bx-link'></i>https://guidetothephilippines.ph/destinations-and-attractions</a></td>
+                    </tr>
+                    <tr>
+                        <td>Video Reference (Free Stock Video)</td>
+                        <td><a href="https://www.pexels.com"><i class='bx bx-link'></i>https://www.pexels.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
