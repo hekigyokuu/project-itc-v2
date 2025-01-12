@@ -13,7 +13,7 @@
 - Login, Register, Feedback (Forms)
 - Feature (Videos)
 
-## Guide (Git and Github)
+## Guide
 - https://www.youtube.com/playlist?list=PLoAp90RrCnA0YEXFC0K0WnUd5GjwLXhbN
   
 ## Contributing
