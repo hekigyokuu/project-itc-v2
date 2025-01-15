@@ -4,122 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Homepage</title>
-
+    
+    <title>Login</title>
+    
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
 
     <style>
-        .home {
-            display: flex;
-            align-items: center;
-            
-            height: 100vh;
-            
-            padding: 60px 9%;
-            color: #d3d3d3;
-        }
-
-        .home-info h1 {
-            font-size: 55px;
-            color: #009d80;
-            text-shadow: 2px 2px #00ffcc;
-            margin-bottom: -15px;
-        }
-
-        .home-info h2 {
-            font-size: 30px;
-            color: #d3d3d3;
-            margin-bottom: 15px;
-        }
-
-        .home-info p a {
-            color: #00ffcc;
-            text-decoration: none;
-
-            transition: .5s ease;
-        }
-
-        .home-info p a:hover {
-            color: #009d80;
-        }
-
-        .feature, 
-        .feedback{
+        #login {
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             height: 100vh;
-            color: #d3d3d3;
-            padding: 0;
-            background-color: #121b2499;
-            box-shadow: 5px 0 0 0 #000;
         }
 
-        .feature-container, 
-        .feedback-container {
+        #login .forms-container {
+            background: #121b24aa;
+            box-shadow: 0 5px 5px 0 #000;
+            padding: 20px;
+            min-width: 40%;
+            border-radius: 7px;
+        }
+
+        .forms-container h1 {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .forms-container input {
+            padding: 7px;
             width: 100%;
-            padding: 60px 9% 0;
+            border-style: none;
+            border-radius: 2px;
+            margin-bottom: 10px;
+            background-color: #eee;
         }
 
-        .feature-container h1, 
-        .feedback-container h1 {
-            margin: 0 0 20px;
-            font-size: 35px;
-            text-align: left;
+        .forms-container .forms-button {
+            display: flex;
+            justify-content: center;
         }
 
-        .feature-container iframe, 
-        .feedback-container iframe {
-            border: none;
+        .forms-container button {
             width: 100%;
-            height: calc(100vh - 180px);
-            max-height: 800px;
-            border-radius: 8px;
+            padding: 7px;
+            border-radius: 4px;
+            border-style: none;
+            background-color: #00ffcc;
+            transition: .3s ease;
         }
 
+        .forms-container button a {
+            display: block;
+            color: #1f242d;
+            cursor: pointer;
+            transition: .3s ease;
+        }
+
+        .forms-container button:hover {
+            background-color: #009d80;
+        }
+
+        .forms-container button:hover a {
+            color: #fff;
+        }    
+
+        .forms-container p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .forms-container p a {
+            color: #00ffcc;
+            transition: .3s ease;
+        }
+
+        .forms-container p a:hover {
+            color: #009d80;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#" class="logo">tampokLokal</a>
-        <ul>
-            <li class="active"><a href="#"><i class='bx bx-home-alt-2' ></i>Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn"><i class='bx bx-rectangle'></i>Feed</a>
-                <div class="db-content">
-                    <a href="feed.html#foods">Foods</a>
-                    <a href="feed.html#beverages">Beverages</a>
-                    <a href="feed.html#travel">Travel</a>
-                </div>
-            </li>
-            <li><a href="about.html"><i class='bx bx-id-card'></i>About</a></li>
-            <button><a href="login.html"><b>Login</b></a></button>
-        </ul>
-    </nav>
 
-    <section class="home">
-        <div class="home-info">
-            <h1>tampokLokal</h1>
-            <h2>Enjoy the rich heritage of Filipino cuisine and destinations!</h2>
-            <p>This website is for educational purposes only. Share your <a href="index.html#feedback" class="to-feedback">feedback</a> and explore our <a href="index.html#feature" class="to-feedback">features</a>!</p>
+    <form id="login" action="homepage.html" method="GET">
+        <div class="forms-container">
+            <h1>Login</h1>
+            <label for="user-email"><b>Email</b></label><br>
+            <input type="email" name="user-email" placeholder="enter your email here..." required>
+            <br>
+            <label for="user-password"><b>Password</b></label><br>
+            <input type="password" name="user-password" placeholder="enter your password here..." required>
+            <br><br>
+            <div class="forms-button">
+                <button><a><b>Sign In</b></a></button>
+            </div>
+            <p>No account? <a href="register.html">Register</a> now or go <a href="homepage.html">back</a> to the home page.</p>
         </div>
-    </section>
-    
-    <section class="feature" id="feature">
-        <div class="feature-container">
-            <h1>Website Features</h1>
-            <iframe src="feature.html" title="Feature Section" frameborder="0" width="100%" height="100%" id="feature-iframe"></iframe>
-        </div>
-    </section>
-
-    <section class="feedback" id="feedback">
-        <div class="feedback-container">
-            <h1>Website Feedback?</h1>
-            <iframe src="feedback.html" title="Feedback Section" frameborder="0" width="100%" height="100%" id="feedback-iframe"></iframe>
-        </div>
-    </section>
-
+    </form>
 </body>
 </html>

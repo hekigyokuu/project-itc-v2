@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Homepage</title>
+    <title>Feed</title>
 
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link rel="Icons" href="">
 
     <style>
         body {
@@ -35,6 +36,13 @@
             border-radius: 3px; 
             height: auto;
             margin-bottom: 70px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeDown 1s ease-out forwards;
+        }
+
+        .feed-info:hover {
+            width: 1300px;
         }
 
         .feed-info h2 {
@@ -66,15 +74,26 @@
             margin: 100px 0 0 0;
             border: 1px solid #fff;
         }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
     <nav class="navbar">
-        <a href="#" class="logo">tampokLokal</a>
+        <a href="homepage.html" class="logo">tampokLokal</a>
         <ul>
-            <li><a href="index.html"><i class='bx bx-home-alt-2' ></i>Home</a></li>
+            <li><a href="homepage.html"><i class='bx bx-home-alt-2' ></i>Home</a></li>
             <li class="dropdown">
-                <a href="#" class="dropbtn"><i class='bx bx-rectangle' ></i>Feed</a>
+                <a href="#" class="dropbtn" style="color: #00ffcc;"><i class='bx bx-rectangle' style="color: #00ffcc;"></i>Feed</a>
                 <div class="db-content">
                     <a href="feed.html#foods">Foods</a>
                     <a href="feed.html#beverages">Beverages</a>
@@ -82,7 +101,7 @@
                 </div>
             </li>
             <li><a href="about.html"><i class='bx bx-id-card'></i>About</a></li>
-            <button><a href="login.html"><b>Login</b></a></button>
+            <button><a href="index.html"><b>Login</b></a></button>
         </ul>
     </nav>
 
